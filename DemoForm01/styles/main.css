@@ -1,0 +1,95 @@
+input , select , button{
+    border-radius: 0.8em;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid  rgb(166, 124, 206);
+    background-color: rgb(250, 250, 250);
+}
+
+select{
+  width:150px;
+  margin:5px 0px;
+  padding: 5px 0px;
+}
+
+* div{
+    color:white
+}
+
+@media screen and (max-width:450px) {
+    .form1{
+        background-color: rgb(166, 124, 206);
+        width: 90%;
+        border-radius: 25px;
+        padding: 15px;
+        overflow: hidden;
+    }
+}
+@media screen and (min-width:450px) {
+.form1{
+   
+    background-color: rgb(166, 124, 206);
+    border-radius: 25px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 500px;
+    
+}
+}
+
+div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin-top: 10px;
+
+}
+
+input:valid{
+    border: 2px solid rgb(21, 212, 21);
+   
+}
+
+input:focus{
+    background-color: rgb(166, 124, 206);
+    color: white;
+}
+
+button{
+    align-items: end;
+    padding: 5px 25px;
+    background-color: rgb(221, 142, 204);
+    color: white;
+}
+ 
+h3{
+    margin:auto;
+padding: 0px;
+
+}
+
+fieldset div{
+    display: block
+}
+
+#form_genre{
+    margin: auto;
+}
+
+legend{
+    color: white;
+}
+
+#titrePays{
+    width: 100%;
+display: block;
+}
+
+
+.ensembleButton{
+    justify-content: start;
+}
+
+

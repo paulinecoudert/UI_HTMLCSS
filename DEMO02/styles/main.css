@@ -1,0 +1,69 @@
+h1{
+    color:darkolivegreen;
+    text-transform: uppercase;
+
+
+}
+
+#titre_site{
+text-decoration: underline dashed 2px darkolivegreen;
+margin-top: 20px;
+text-align: center;
+}
+
+.primaryColor{
+color: rgb(99, 99, 99);
+}
+
+article h1 {
+   color: purple 
+}
+
+article > h1 {
+color:red;
+}
+
+article ~ article {
+    color:pink;
+}
+
+h1 + p , h2 + p, h3 {
+    color:rgb(120, 139, 165);
+}
+
+img{
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+   
+}
+
+article > p {
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width:100%;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+li {
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 25px;
+  
+}
+
+

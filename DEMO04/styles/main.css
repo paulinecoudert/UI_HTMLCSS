@@ -1,0 +1,60 @@
+/* Télécharger sur befonts ou dafonts l dossier zip de ma font family et la glisser dans mon dossier assets -> fonts */
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 400;
+    src: url('../assets/fonts/Poppins-Regular.ttf') format("truetype");
+    font-display: swap;
+}
+
+body {
+    background-image: url("../assets/imgs/fond.jpg");
+    backdrop-filter: blur(3px);
+    color: #FF928B;
+    /* Permet d'avoir l'image pas répété et cover sur toute la surface */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* fond attaché a l'ecran si le texte dépasse permet de scoller le exte en gardant l'image fixe */
+    background-attachment: fixed;
+
+}
+
+article {
+
+    /* width: 80%; */
+    margin: auto;
+    max-height:35vh;
+    overflow: auto;
+    /* le white-space  no-wrap Permet de couper les mots */
+    /* white-space: nowrap; */
+    text-overflow: ellipsis;
+    /* le width min max ce dessous */
+    width: max(300px, 80%);
+}
+
+
+h1 {
+    text-transform: uppercase;
+  
+    font-family: 'Poppins';
+    font-weight: 700;
+    padding-top: 100px;
+    
+    
+}
+
+h1+p {
+    font-style: italic;
+    font-family: 'Poppins';
+    font-size: 1rem;
+
+}
+
+p+p {
+
+    font-family: 'Poppins';
+    font-size: 0.8rem;
+    font-weight: 700;
+    /* https://coolors.co/ (palette de couleur générée) */
+
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire
+
+    </title>
+    <link rel="stylesheet" href="styles/main.css">
+    </link>
+</head>
+
+<body>
+
+    <!-- <form method="get" action=""> 
+        <label for="name: "><Em></Em>Name: </label>
+        <input type="name" name="name" id=""><br><br>
+        <label for="email"><Em></Em>email: </label>
+        <input type="email" name="email" id=""><br><br>
+        <input type="submit" value="send">
+    </form> -->
+    <h1>Demo Formulaire</h1>
+
+    <form method="post" action="traitement.php" class=form1 enctype="multipart/form-data">
+        <div>
+            <label for="formTest">Name:</label>
+            <input type="text" id="formTest" name="firstName" placeholder="nom" required pattern="[a-zA-Z0-9]+"
+                minlength="4" maxlength="10" autofocus>
+        </div>
+        <fieldset>
+            <legend>Genre: </legend>
+            <div id="form_genre">
+                <input type="radio" id="woman" name="woman" value="woman" checked></input>
+                <span class="checkmark"></span>
+                <label for="woman">Femme </label>
+                <input type="radio" id="man" name="man" value="man"></input>
+                <span class="checkmark"></span>
+                <label for="man">Homme</label>
+
+                <input type="radio" id="other" name="other" value="other"></input>
+                <span class="checkmark"></span>
+                <label for="other">Autre</label>
+            </div>
+        </fieldset>
+        <div>
+            <!-- step 2 indique que l'on ait sur des chiffres pairs -->
+            <label for="form_number">Nb freres et soeurs: </label>
+            <input type="number" id="form_number" name="nbfrereSoeur" required min="0" max="5" step="2" placeholder="0">
+        </div>
+        <div>
+            <div id="titrePays">
+                <h3>Votre pays de naissance</h3>
+            </div>
+            <div>
+            <select name="country" id="pays">
+                <option value="null">.....</option>
+                <option value="be">Belgium</option>
+                <option value="fr">France</option>
+                <option value="ch">Suisse</option>
+            </select></div>
+        </div>
+
+        <div>
+            <label for="formEmail">email: </label>
+            <input type="email" name="email" id="formEmail" required>
+        </div>
+        <div>
+
+            <label for="form_pass">Password: </label>
+            <input type="password" id="form_pass" name="password" required min="0" max="5" step="2" placeholder="0">
+        </div>
+        <div>
+
+            <label for="form_file">Vos fichiers: </label>
+            <input type="file" id="form_file" name="file" multiple accept="image/jpg, image/png, image/gif">
+        </div>
+        <div>
+            <label for="form_consent">Je déclare avoir pris conaissance des conditions générales
+                d'utilisation....</label>
+            <input type="checkbox" id="form_consent" name="consent">
+        </div>
+        <div>
+            <label for="form_news">Je souahite recevoir la newsletter</label>
+            <input type="checkbox" id="form_news" name="newsletter" checked>
+        </div>
+
+    
+        <div class="ensembleButton">
+            <button>Valider</button>
+            <button type="reset">Vider le formulaire</button>
+            <button type="button">JS</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
