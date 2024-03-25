@@ -1,0 +1,61 @@
+
+/* Background styles */
+body {
+    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100');
+    background-color: black;
+    background-position: center;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header>h1{
+    color:rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+header>nav{
+    background-color: rgb(92, 43, 226);
+    color: rgb(231, 163, 200);
+}
+
+
+
+header>nav>ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+header>nav:hover>ul{
+max-height: 312px;
+}
+
+header>nav li{
+    text-align: center;
+    padding: 5px 35px;
+}
+
+header>nav li:hover{
+    background-color: rgb(231, 163, 200);
+    color: rgb(92, 43, 226) ;
+
+}
+
+article{
+    width:60%;
+    margin: 20px auto 25px;
+    color:rgb(61, 60, 60);
+    padding: 25px 50px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    
+}
+
+nav svg{
+    margin-left: 10px;
+}
