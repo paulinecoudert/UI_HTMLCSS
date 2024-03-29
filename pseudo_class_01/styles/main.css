@@ -1,0 +1,418 @@
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 400;
+    src: url('../assets/fonts/Poppins-Regular.ttf') format("truetype");
+    font-display: swap;
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: rgb(20, 20, 20);
+}
+
+nav{
+    background-color: rgb(95, 94, 94);
+    height: 100px;
+    margin:0px;
+ 
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.container1{
+
+
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.rond {
+
+    padding: 0px;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(135, 52, 146);
+    /* 2e couleur doit etre en opacité 0 */
+ background-image: linear-gradient(rgba(154, 217, 163, 1), rgba(231, 240, 238, 0));
+    border-radius: 5000px;
+    transition: 1s ease-in-out;
+}
+
+
+.rond::after {
+    content: "";
+    background-image: linear-gradient(rgb(217, 154, 209), rgba(240, 231, 238, 0));
+    /* display: block; */
+     width: 250px;
+    height: 250px;
+    opacity: 0;
+    transition: 0.05s;
+    border-radius: 5000px;
+}
+
+.rond:hover::after {
+    opacity: 1;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 35px;
+
+}
+
+a {
+
+    text-decoration: none;
+    background-color: rgb(124, 185, 187);
+    color: white;
+    padding: 0px 20px;
+    font-family: 'Poppins';
+    border-radius: 10px;
+    text-transform: uppercase;
+    width: 80px;
+    margin: 15px ;
+    transition: 5s , 0.5s , cubic-bezier(0,.97,1,.25)
+    ;
+margin:auto;
+padding: 10px 20px;
+
+}
+
+a:hover {
+    background-color: rgb(124, 185, 187);
+
+    color:white;
+    /* border: 1px solid rgb(45, 83, 153); */
+
+}
+
+
+ul{
+   list-style-type: none;
+   width: 100%;
+   padding: 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin:auto 0px;
+
+
+}
+
+ul a{
+text-decoration: none;
+background-color: rgb(124, 185, 187);
+color: white;
+
+border-bottom: 2px solid rgba(48, 9, 224, 0.007);
+border-radius: 0px;
+/* padding: 10px 30px; */
+width:0%;
+position: relative;
+
+
+}
+
+ul a::after{
+    display: flex;
+    content:"";
+    width:100%;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border-bottom: 3px solid rgb(49, 9, 224);
+    background-color: rgb(124, 185, 187);
+    transform: scaleX(0);
+    transition: 0.5s;
+
+    }
+
+ul a:hover::after{
+    border-bottom: 3px solid rgb(49, 9, 224);
+    transform: scaleX(1);
+    background-color: rgb(124, 185, 187);
+}
+
+.myButton{  display: flex;
+ 
+    color: rgb(250, 247, 247);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.myButton span{
+    z-index: 1;
+}
+
+.myButton::before{
+    content:"";
+    display: flex;
+    width: 120%;
+    height: 100%;
+    background: rgb(13, 108, 121);
+    position:absolute;
+    left:-130%;
+    bottom:0;
+    transition: .5s  ease-in-out;
+    transform: skewX(-25deg)
+   
+}
+
+.myButton:hover::before{
+    left:-10px;
+}
+
+
+
+.menu2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.myButton1{  display: flex;
+ 
+    color: rgb(250, 247, 247);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.myButton1 span{
+    z-index: 1;
+}
+
+.myButton1::before{
+    content:"";
+    display: flex;
+    width: 120%;
+    height: 100%;
+    background: rgb(13, 108, 121);
+    position:absolute;
+    left:-130%;
+    bottom:0;
+    transition: .15s  ease-in-out;
+    transform: skewX(-25deg)
+   
+}
+
+.myButton1:hover::before{
+    left:-10px;
+}
+
+
+
+/* Button 2 avec icone  */
+
+.myButton2{
+position: relative;
+width:100px !important;
+}
+
+.myButton2 span {
+display: inline-block;
+position: relative;
+transition: 0.5s;
+margin: auto 13px;
+}
+
+.myButton2 span::before {
+    content:"-> ";
+    /* background:url(../assets/imgs/ArrowRight.png); */
+    height: 24px;
+    width: 24px;
+    background-color: white;
+    margin: auto 0;
+    padding: 0;
+    color: rgb(124, 185, 187);
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0;
+    top:0;
+    left:-15px;
+    transition: .3s ease-in-out;
+   
+}
+
+.myButton2:hover span{
+    padding-left: 15px;
+}
+
+.myButton2:hover span:before{
+    opacity:1;
+    right: 0;
+}
+
+/* 
+Rotation  */
+
+
+h1 {
+    perspective:800px;
+color:white;
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+
+h1 span{
+margin-left: 15px;
+    display:flex;
+    color:rgb(221, 79, 23);
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    transform-origin: 50% 0;
+    transform-style: preserve-3d;
+    
+}
+
+h1 span:after{
+    content: "UX";
+    position: absolute;
+    color: rgb(13, 194, 43);
+    top:100%;
+    transform-origin: 50% 0;
+    transform:rotateX(-89deg) ;
+
+    }
+
+h1:hover span{
+    transform: rotateX(89deg) translateY(-25px);
+
+    }
+        
+    .card{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin:auto 10px;
+        width:200px;
+        height:300px;
+        position:relative;
+        perspective: 800px;
+
+    }
+
+    img{
+        max-width:100%;
+        display: block;
+     
+    }
+
+    .title{
+        position:absolute;
+        bottom:0;
+        left:0;
+        transform: scale(.7);
+        transition: .5s;
+    }
+
+    .character{
+        position:absolute;
+        top:0;
+        transition: .5s;
+        opacity: 0;
+    }
+    .inner_card{
+        transition: .5s;
+    }
+
+    .inner_card::before{
+        content:"";
+        height:100%;
+        width:100%;
+        display: block;
+        position:absolute;
+        transition: .5s;
+        background: linear-gradient(180deg, rgb(23,23,23)0%, rbga(56,56,56,0),
+        rbga(61,61,61,0)68%, rgb(25,25,25) 94%);
+        opacity:0;
+    }
+
+    .inner_card::before .inner_card::after{
+opacity: 1 ;
+    }
+
+
+    .card:hover .inner_card{
+        transform: rotateX(25deg);
+        box-shadow: 0 30px 30px rgba(0, 0, 0, 0.479);
+    }
+
+    .card:hover .title{
+        transform: scale(.7) translateY(-40px);
+       
+    }
+
+    .card:hover .character{
+        opacity: 1;
+        transform: translateY(-65px);
+    }
+
+
+.wrapper2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    top:50px;
+    background: rgb(20, 20, 20);
+    height: 150px;
+    filter: blur(10px) contrast(2000%);
+}
+
+.b1, .b2{
+background: tomato;
+width:100px;
+height: 100px;
+border-radius: 50%;
+position: absolute;
+
+}
+
+.b1{
+animation-name: blobLeft;
+animation-duration: 1.5s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+.b2{
+animation-name: blobRight;
+animation-duration: 1.5s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+/* deplacement du blob */
+@keyframes blobLeft {
+    0%{transform: translateX(-5px);}
+
+    100%{transform: translateX(-80px);}
+}
+
+@keyframes blobRight {
+    0%{transform: translateX(-5px);}
+
+    100%{transform: translateX(80px);}
+}
